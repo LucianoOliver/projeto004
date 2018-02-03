@@ -30,6 +30,17 @@ public class TestaBanco {
 		contaDaMaria.titular.nome = "Maria";
 
 		System.out.println(contaDaMaria.titular.nome);
+		
+		Cliente luc = new Cliente();
+		luc.nome = "Luciano";
+		luc.cpf = "111.111.111.11";
+		luc.profissao = "analista";
+		
+		Conta contaLuciano = new Conta();
+		contaLuciano.deposita(1500);
+		contaLuciano.titular = luc;
+		
+		System.out.println(contaLuciano.titular.nome);
 
 	}
 
