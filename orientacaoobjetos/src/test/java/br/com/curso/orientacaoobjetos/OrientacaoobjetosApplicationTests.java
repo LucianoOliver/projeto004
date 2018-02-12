@@ -11,6 +11,15 @@ public class OrientacaoobjetosApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		Cliente c = new Cliente();
+		c.cpf = "33333333333";
+		c.nome = "Luciano";
+		c.profissao = "Analista de Testes";
+		
+		System.out.println("Dados do cliente: " + c);
+		System.out.println("Nome: "+ c.nome);
+	
+		
 	}
 
 }
