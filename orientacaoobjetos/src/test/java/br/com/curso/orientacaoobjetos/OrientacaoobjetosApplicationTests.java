@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class OrientacaoobjetosApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	public void deveTerSaldoMaior() {
 		Cliente cliente = new Cliente();
 		cliente.cpf = "33333333333";
 		cliente.nome = "Luciano";
@@ -27,8 +27,12 @@ public class OrientacaoobjetosApplicationTests {
 		conta.numero = 147896;
 		conta.saldo = 5000;
 		conta.titular = cliente;
-		
+		System.out.println("Saldo da conta antes do depósito: "+ conta.saldo);
+		conta.deposita(2000L);
 		System.out.println("Titular da conta: "+ conta.titular.nome);
+		System.out.println("Saldo da conta apos o depósito: "+ conta.saldo);
+		
+		assertEquals(7000, conta.saldo, 0.0);
 		
 	}
 	
@@ -39,10 +43,10 @@ public class OrientacaoobjetosApplicationTests {
 		conta.saldo = 500L;
 		
 		conta.deposita(1000L);
-		System.out.println("Saldo da conta: "+conta.saldo);
+		System.out.println("Saldo da conta: " +conta.saldo);
 
 		
-		assertEquals(15000, conta.saldo, 0.0);
+		assertEquals(1500, conta.saldo, 0.0);
 		
 		
 				
