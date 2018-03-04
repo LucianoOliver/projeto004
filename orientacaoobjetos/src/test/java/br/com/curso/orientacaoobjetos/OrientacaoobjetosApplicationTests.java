@@ -44,11 +44,8 @@ public class OrientacaoobjetosApplicationTests {
 		
 		conta.deposita(1000L);
 		System.out.println("Saldo da conta: " +conta.saldo);
-
 		
 		assertEquals(1500, conta.saldo, 0.0);
-		
-		
 				
 	}
 
