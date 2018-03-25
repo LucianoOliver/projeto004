@@ -35,6 +35,7 @@ public class Cnpj {
 		      System.out.printf("CPF Valido:%s \n", Cnpj.isValidCPF("01115375502")); 
 		      System.out.printf("CNPJ Valido:%s \n", Cnpj.isValidCNPJ("13642634756318")); 
 		   }
-		
+		   
+		  
 
 }
