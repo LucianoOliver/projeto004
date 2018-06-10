@@ -6,12 +6,9 @@ public class Conta {
 	int numero;
 	Cliente titular;
 	
-	
-
 	public double getSaldo() {
 		return saldo;
 	}
-
 
 
 	public void setSaldo(double saldo) {
@@ -25,11 +22,9 @@ public class Conta {
 	}
 
 
-
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
-
 
 
 	public int getNumero() {
@@ -37,11 +32,9 @@ public class Conta {
 	}
 
 
-
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-
 
 
 	public Cliente getTitular() {
@@ -49,11 +42,9 @@ public class Conta {
 	}
 
 
-
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
-
 
 
 	public void deposita(double valor) {

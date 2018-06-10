@@ -32,7 +32,7 @@ public class TestaBanco {
 		System.out.println(contaDaMaria.titular.nome);
 		
 		Cliente luc = new Cliente();
-		luc.nome = "Luciano";
+		luc.nome = "Luciano Rocha";
 		luc.cpf = "111.111.111.11";
 		luc.profissao = "analista";
 		
