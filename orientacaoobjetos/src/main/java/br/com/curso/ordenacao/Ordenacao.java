@@ -11,7 +11,7 @@ public class Ordenacao {
 		Conta conta2 = new Conta(1, "Lucas Podolski");
 		Conta conta3 = new Conta(3, "Arne Friedrich");
 
-		List lista = new ArrayList();
+		List<Conta> lista = new ArrayList();
 		lista.add(conta1);
 		lista.add(conta2);
 		lista.add(conta3);
@@ -19,11 +19,11 @@ public class Ordenacao {
 	   ArrayList a = new ArrayList();
 	   
 	   System.out.println("Sem Ordenacao: " +lista); 
-	   Collections.sort(lista);
 	   
 	   Collections.reverse(lista);
 	   System.out.println("Reverse antes de ordenar: " +lista); 
 	   
+	   Collections.sort(lista);
 	   System.out.println("Sort: " +lista); 
 	   
 	   Collections.reverse(lista);
@@ -41,7 +41,6 @@ public class Ordenacao {
 	   lista1.add("Regiane");
 	   lista1.add("Azure");
 	   
-
 	   // repare que o toString de ArrayList foi sobrescrito:
 	   System.out.println(lista1); 
 
