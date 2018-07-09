@@ -1,5 +1,8 @@
 package br.com.curso.formato;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Formatter;
 import java.util.Locale;
 
@@ -23,6 +26,32 @@ public class StringFormatter {
 	        Formatter fmt = new Formatter(sbuf);
 	        fmt.format("PI = %f%n", Math.PI);
 	        System.out.print(sbuf.toString());
+	        
+	        
+	        String strDate = "2012-05-20T09:00:00.000Z";
+
+	        try {
+	            // create SimpleDateFormat object with source string date format
+	            SimpleDateFormat sdfSource = new SimpleDateFormat(
+	                    "yyyy-MM-dd'T'hh:mm:ss'.000Z'");
+
+	            // parse the string into Date object
+	            Date date = sdfSource.parse(strDate);
+
+	            // create SimpleDateFormat object with desired date format
+	            SimpleDateFormat sdfDestination = new SimpleDateFormat(
+	                    "dd/MM/yyyy, ha");
+
+	            // parse the date into another format
+	            strDate = sdfDestination.format(date);
+
+	            System.out
+	                    .println("Date is converted from yyyy-MM-dd'T'hh:mm:ss'.000Z' format to dd/MM/yyyy, ha");
+	            System.out.println("Converted date is : " + strDate.toLowerCase());
+
+	        } catch (ParseException pe) {
+	            System.out.println("Parse Exception : " + pe);
+	        }
 	    }
 
 }
