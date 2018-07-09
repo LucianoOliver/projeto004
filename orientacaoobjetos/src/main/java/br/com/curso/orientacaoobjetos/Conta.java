@@ -1,5 +1,7 @@
 package br.com.curso.orientacaoobjetos;
 
+import br.com.curso.padroesprojeto.Pagamento;
+
 public class Conta {
 	double saldo;
 	int agencia;
@@ -49,5 +51,11 @@ public class Conta {
 
 	public void deposita(double valor) {
 		this.saldo += valor;
+	}
+
+
+	public static void executa(Pagamento aPagar) {
+		// TODO Auto-generated method stub
+		
 	}
 }
