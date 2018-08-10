@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: interfaces
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: luciano
+Implementation-Vendor-Id: br.com.curso.interfaces
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/interfaces/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
